@@ -1,32 +1,27 @@
-## Migrate + seed
+# Posts
 
-```sh
-$ php artisan migrate:refresh --seed
-```
+## About project
 
-## Install composer packages
+Project based on:
+> Laravel framework (v. 9), Docker, MySQL (v. 8.0.25) and PHP (v. 8.0).
 
-```sh
-$ composer install
-```
+### Service supports both:
+- Web Frond-End.
 
-## Create and setup .env file
-
-- #### make a copy of .env.example and rename to .env command:
-```sh
-$ copy .env.example .env
-$ php artisan key:generate
-```
-- #### put database credentials in .env file
+## Features
+> The service allows you to do CRUD operations with post entity.
 
 ## Installation
 
-- #### For deploying the project you can use [Docker](https://www.docker.com/) command:
+- #### For deploying the project you need to use [Docker](https://www.docker.com/) command:
 ```sh
-docker-compose up -d
+docker-compose up
 ```
-
-- #### After that, open the Main Page by navigating to your server address:
+- #### For run the server you need to use:
 ```sh
-127.0.0.1:80
+php artisan serve
+```
+- #### After that, open the Main Page with posts by navigating to your server address:
+```sh
+127.0.0.1
 ```
